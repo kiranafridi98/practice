@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">bootstrap form classes</h2>
+        <div class="row py-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="" id="" class="form-control">
+                    <small class="form-text text-danger">must be 8 characters long</small>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">country</label>
+                    <select name="" id="" class="form-select">
+                        <option value="">Pakistan</option>
+                        <option value="">Brazil</option>
+                        <option value="">Switzerlanad</option>
+                        <option value="">Turkey</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Upload File</label>
+                    <input type="file" name="" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Amount Range</label>
+                    <input type="range" name="" id="" class="form-control-range">
+                </div>
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div class="form-check">
+                        <input type="checkbox" name="" id="musiccheck" class="form-check-input" disabled>
+                        <label for="musiccheck" class="form-check-label">Music</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="" id="sportcheck" class="form-check-input">
+                        <label for="sportcheck" class="form-check-label">Sports</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="" id="bookcheck" class="form-check-input">
+                        <label for="bookcheck" class="form-check-label">Books</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="form-check">
+                        <input type="radio" name="gender" id="mradio" class="form-check-input">
+                        <label for="mradio" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="gender" id="fradio" class="form-check-input">
+                        <label for="fradio" class="form-check-label">Female</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="gender" id="oradio" class="form-check-input">
+                        <label for="oradio" class="form-check-label">Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="container">
+        <h2 class="py-3 text-center">Bootstrap inline form</h2>
+        <form action="" class="row py-3">
+            <div class="col-md-4">
+                <input type="text" class="form-control border-primary " placeholder="user name">
+            </div>
+            <div class="col-md-4">
+                <input type="password" class="form-control is-invalid" placeholder="password">
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">login</button>
+            </div>
+        </form>
+    </div><br>
+    <div class="container mb-5">
+        <h2 class="py-3 text-center"> bootstrap custom form classes</h2>
+        <div class="row py-3">
+            <div class="col">
+                <select name="" class="form-select mb-3">
+                    <option value="">Pakistan</option>
+                    <option value="">Brazil</option>
+                    <option value="">Switzererland</option>
+                    <option value="">Turkey</option>
+                </select>
+                <select name="" class="form-select" multiple size="3">
+                    <option value="">Pakistan</option>
+                    <option value="">Brazil</option>
+                    <option value="">Switzererland</option>
+                    <option value="">Turkey</option>
+                    <option value="">Germany</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Amount Range</label>
+                <input type="range" class="form-range">
+                <div class="custom-file">
+                    <input type="file" name="" id="" class="form-control">
+                </div>
+                <div class="form-switch">
+                    <input type="checkbox" name="" id="bookcheck" class="form-check-input">
+                    <label for="bookcheck" class="form-check-label">Books</label>
+                </div>
+            </div>
+        </div>
+        <div class="roe">
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="py-3 text-center">input group classes</h2>
+        <div class="row py-3">
+            <div class="col">
+                <div class="input-group">
+                    <div class="input-group-prpend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

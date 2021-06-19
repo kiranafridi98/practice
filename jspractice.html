@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h1>JS Method</h1>
+    <button onclick="hello()">Click me </button>
+
+    <script>
+        var user={
+            fname:"<br> kiran ",
+            lname:" afridi <br>",
+        };
+        document.write(user.fname);
+        document.write(user.lname);
+
+
+
+        var obj={
+            name:"kiran",
+            age:23,
+            school:false,
+            courselist:["x","y","z"],//array in object
+            add :function(x,y){
+                return x+y + "<br>"; 
+            },
+            getcoursecount:function(){
+                return this.name + " is enrolled in total of "+ this.courselist.length +" courses <br><br>"; 
+            },
+        };
+        document.write(obj.add(2,3));
+        document.write(obj.getcoursecount());
+
+
+        function square(num){
+            document.write("square of the number is "+ num*num+"<br>");
+        }
+        square(5);
+
+        //array of objects (objects in arrays)
+        var item=[
+            {name: "tv", price:10},
+            {name: "mobile", price:30},
+            {name: "laptop", price:30},
+        ];
+        console.log(item);
+        for(var a=0;a<item.length;a++){
+            document.write(item[a].name +" "+ item[a].price +"<br><br>");
+
+        }
+        
+        //multidimension array
+        var ary=[
+            ["kiran", 23,"BS"],
+            ["malaika", 17,"BS"],
+            ["salaar ", 3,"PG"],
+            ["saqib", 18,"BS"],
+        ];
+        document.write("<table border='1 px'>");
+        for(var a=0;a<4;a++){
+            document.write("<tr>");
+            for(var b=0;b<3;b++){
+                //document.write(ary[a][b]+" ");
+                document.write("<td>"+ary[a][b]+"</td>")
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        //.............................
+
+        var a=100;
+        var b=50;
+        if(a>b){
+            document.write("<br>a is greater <br><br>");
+        }
+
+        function first(){
+            document.write('hello function <br><br>');
+        }
+        first();
+        first();
+        first();
+        function hello(fname="x", lname="y"){
+            document.write("hello" +" "+ fname +" "+ lname)
+        } 
+        hello("kiran","afridi <br>");
+
+        function fullname(fname,lname){
+            var a= fname +" "+ lname;
+            return a;
+        }
+        var fn = fullname("khan","afridi"+ "<br><br>");
+        document.write(fn);
+
+
+//............................
+        var ary=[10,20,30,40,50];
+        for(a=0;a<=4;a++){
+            document.write(ary[a]+"<br>");
+        }
+//....................................
+
+        /*var ary = new Array(3);
+        for(var g=0;g<3;g++){
+            ary[g]=prompt("enter the values")
+        }
+        document.write("<ul>");
+            for(var a=0;a<3;a++){
+                document.write("<li>" + ary[a] + "</li>")
+            }
+        document.write("</ul>");  */  
+
+
+//........................................
+        var ages=[10, 14,18,19,21,]
+        document.write(ages + "<br>");
+        var b= ages.some(checkadult);
+        document.write(b + "<br>");
+
+        function checkadult(age){
+            return age>=18;
+        }
+//...........javascript methods .........
+        var strng="javascript methods practice <br> ";
+        document.write(strng);
+        //var c=strng.charAt(4);
+        //var c=strng.charCodeAt(4);
+        //var c=strng.split(" ")
+        //var c=strng.slice(4,18)
+        //var c=strng.substr(4,11)
+        var c=strng.substring(4,12)
+        document.write(c);
+
+        //event
+        function hello(){
+            document.write("hello everyone");
+        } 
+    </script>
+     
+
+</body>
+</html>
