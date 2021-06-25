@@ -25,6 +25,9 @@ img{
     color: white;
     background-color: violet;
 }
+#hd{
+    background-color: brown;
+}
 #logo{
     font-size: 2rem;
     margin-top: 5px;
